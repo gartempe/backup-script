@@ -5,11 +5,13 @@ This backup script was created for Linux to be used with Samba (CIFS), LUKS and 
 
 Requirements (on Debian/Ubuntu):
 --------------------------------
-`apt-get install rsync cryptsetup cifs-utils`
+
+    apt-get install rsync cryptsetup cifs-utils
 
 I highly recommend to create a key file for your encrypted volume, also, you should put your Samba credentials into ~/.smbcredentials. You should avoid to save 
 
 There are quite some things you have to edit in the backupnas.sh.
+
     [NAME]                 name of your encrypted volume like /dev/mapper/usb-crypt
     [NAS IP]               the IP of your NAS
     [NAS FOLDER]           folder of your data on your NAS, e.g. /data           
